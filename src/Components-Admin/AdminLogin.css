@@ -1,0 +1,249 @@
+.Admin-Login-Module{
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+.Admin-Login-Module>form{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 12px;    
+    opacity: 0.95;
+    background-color: none;
+    backdrop-filter: blur(10px);
+}
+
+.admin-login-form {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px 0;
+}
+.admin-login-form h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #032240;
+}
+
+.admin-login-form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  display: block;
+  color: #032240;
+}
+
+.admin-login-form input[type="text"],
+.admin-login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.admin-login-title-row {
+  margin-bottom: 25px;
+}
+
+.admin-login-title-row .auth-back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px 18px;
+  color: #032240;
+  background: #f8fbff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.admin-login-title-row .auth-back-btn:hover {
+  color: #007bff;
+  background: #eaf4ff;
+  border-color: #99ccff;
+}
+
+/* Forgot password link styles */
+.forgot-password {
+    color: #1E88E5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.forgot-password:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+/* Error message styles */
+.error-msg {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Input error border */
+.input-error {
+    border-color: #dc3545 !important;
+}
+
+.input-error:focus {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.1) !important;
+}
+
+/* Form options layout */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.remember-me-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.remember-me-label input {
+    width: auto;
+    cursor: pointer;
+}
+
+/* Login button */
+.j-login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.j-login-btn:hover {
+    background-color: #1565C0;
+}
+
+.j-login-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.otp-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.otp-modal-content {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.method-btn-active {
+    border: 2px solid #2563eb;
+    background-color: #eff6ff;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.method-btn-inactive {
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #666;
+}
+
+.otp-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 4px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.otp-input-error {
+    border-color: #dc3545;
+}
+
+.otp-error-text {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.verify-btn-primary {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.verify-btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.verify-btn-secondary {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #666;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}

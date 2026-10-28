@@ -1,0 +1,79 @@
+.Admin-overview-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Admin-overview-title {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.Admin-divider {
+  border: 0;
+  border-top: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.Admin-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Admin-total-count {
+  font-size: 28px;
+  font-weight: bold;
+  fill: #333;
+}
+
+.Admin-total-label {
+  font-size: 12px;
+  fill: #888;
+}
+
+.Admin-chart-segment {
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.Admin-legend-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* equal columns, overflow avvadhu */
+  gap: 12px 16px;
+}
+
+.Admin-legend-item {
+  display: flex;
+  align-items: flex-start;      /* wrap ayina first line tho align */
+  font-size: 12px;
+  line-height: 16px;            /* dot ni line tho align cheyyadaniki */
+  min-width: 0;
+}
+
+.Admin-dot {
+  flex: 0 0 8px;                /* shrink avvadhu */
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 4px 6px 0 0;          /* (16px line - 8px)/2 = 4px => first line middle */
+}
+
+.Admin-label-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  color: #666;
+  padding-left: 0;
+  margin-right: 6px;
+}
+
+.Admin-label-value {
+  flex: 0 0 auto;
+  margin-left: auto;            /* value eppudu right edge lo */
+  font-weight: bold;
+  color: #222;
+}
